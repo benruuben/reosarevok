@@ -1,4 +1,19 @@
+body {
+    background-color: aliceblue;
+}
+
+h2 {
+    color: darkred;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
 #photo {
     width: 35%;
+    display: block;
+    margin: auto;
     border: 2px solid black;
 }
