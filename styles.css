@@ -2,13 +2,19 @@ body {
     background-color: aliceblue;
 }
 
-h1 {
+h1, h2 {
     color: darkred;
     text-align: center;
+    /*this doesn't seem to do anything in my setup. somewhat confusing*/
+    text-decoration: underline wavy green;
+    text-shadow: 1px 1px 2px black;
 }
 
 p {
     text-align: center;
+    font-family: monospace;
+    font-size: large;
+    font-weight: bold;
 }
 
 #photo {
@@ -16,4 +22,65 @@ p {
     display: block;
     margin: auto;
     border: 2px solid black;
+}
+
+#more-info {
+    background-image: url(p6lva.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+#more-info h3, #more-info th {
+    color: darkblue;
+}
+
+#more-info li, #more-info td {
+    color: orangered;
+}
+
+.list {
+    display: inline-block;
+    min-width: 15%;
+    max-width: 45%;
+    padding: 10px;
+    box-shadow: 15px 15px 2px black;
+    line-height: 1.2;
+    cursor: crosshair;
+}
+
+#list-left {
+    border: 2px solid green;
+    border-radius: 10px 40px;
+    margin-left: 10%;
+}
+
+#list-right {
+    float: right;
+    border: 2px solid green;
+    border-radius: 40px 10px;
+    margin-right: 10%;
+}
+
+#list-right li {
+    list-style-type: square;
+}
+
+table {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#table-centre table {
+    margin: auto;
+    /*ugliest hack ever but we need to add background images and it looks horrible otherwise*/
+    padding-bottom: 150px;
+    /*this is basically useless here but I'm supposed to use position
+    and white-space somewhere and have no use for them*/
+    position: static;
+    white-space: pre;
+}
+
+#table-centre td, #table-centre th {
+    height: 30px;
+    width: 25%;
 }
